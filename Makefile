@@ -1,9 +1,12 @@
-all:	compile clean
+all:	pt en clean
 
-compile:
+pt:
 	pdflatex curriculum-vitae_alvaro-justen.tex
 
-clean:	
+en:
+	pdflatex curriculum-vitae_alvaro-justen-en.tex
+
+clean:
 	rm -f *.aux *.log
 
-.PHONY:	all compile clean
+.PHONY:	all pt en clean
